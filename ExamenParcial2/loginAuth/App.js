@@ -61,12 +61,13 @@ const AuthScreen = ({email, setEmail, password, setPassword, isLogin, setIsLogin
   );
 }
 
-const AuthenticatedScreen = ({user, handleAuthentication}) =>{
-  return(
+const AuthenticatedScreen = ({ user, handleAuthentication }) => {
+  return (
     <View style={styles.authContainer}>
       <Text style={styles.title}>Welcome</Text>
       <Text style={styles.emailText}>{user.email}</Text>
-      <Button title="LogOut" onPress={handleAuthentication} color="#e74c3c"></Button>
+      <Button title="LogOut" onPress={handleAuthentication} color="#800000" />
+      
     </View>
   );
 }
